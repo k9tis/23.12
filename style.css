@@ -1,0 +1,14 @@
+.cl1 {
+	color: red;
+}
+.cl2 {
+	text-shadow: 5px 5px 20px black;
+}
+.cl3{
+	font-size: 72pt;
+
+}
+div {
+	background:white; 
+      border: 3px solid black;
+}

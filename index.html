@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> </title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+		<body>
+			<div>ALOHADANCE</div>
+			<button  id="btn2" onclick="remove(1)">Удалить первый класс</button>
+			<button onclick="remove(2)">Удалить второй класс</button>
+			<button onclick="remove(3)">Удалить третий класс</button>
+			<button onclick="remove(4)">Увеличить рамку</button>
+			<button onclick="remove(5)">Уменьшить рамку</button>
+
+			<script type="text/javascript">
+				$('div').addClass("cl1 cl2 cl3");
+				function remove(id) {
+					if (id==1) {
+						$('div').removeClass("cl1");
+						$('div').css( 
+						{
+							"background-color":"white",
+							"font-size":"50pt",
+
+						}
+						);
+					}
+					if (id==2){
+						$('div').removeClass("cl2");
+						$('div').css("background-color","green");
+
+					}
+					if (id==3){
+						$('div').removeClass("cl3");
+					}
+
+					if (id==4){
+						$('div').css(
+						{
+							 "border":"100px solid black",
+						}
+						);
+				}
+
+					if (id==5){
+						$('div').css(
+						{
+							 "border":"1px solid black",
+						}
+						);
+				}
+			}
+			</script>
+		</body>
+</html>
